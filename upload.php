@@ -19,7 +19,7 @@
         $new_name = rand( 0, 9999999 ).$url;
         $image_url = rand( 0, 123456 );
         $upload = $folder.$new_name;
-        $time = strtotime( '+1 min', time() );
+        $time = strtotime( '+1 day', time() );
         $tomorrow = date("d.m.Y H:i:s", $time);
 
         if( !file_exists( $folder ) )
